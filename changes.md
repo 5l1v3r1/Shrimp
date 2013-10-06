@@ -1,11 +1,9 @@
-0.0.9
+0.0.1
 ------------
-Additions:
+Some SQL Functions:
+NVL
+NVL2
 
-WeightedSample can now take a seed
-Changes:
+To be able to load Oracle, date format must be "DD-MM-YYYY HH24:MI:SS" so this function converts it
+SQOOP_DATE_FORMAT
 
-Test against Pig 0.11.0
-Fixes:
-
-Null pointer fix for Enumerate's Accumulator implementation
