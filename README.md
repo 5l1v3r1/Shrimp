@@ -4,7 +4,7 @@ Shrimp
 Shrimp is a library of user-defined functions for simplifying the programming in Hadoop and Pig.
 </p>
 </p>
-<b>NVL:</b></p>
+### NVL:
 NVL lets you replace null (returned as a blank) with a string in the results of a query. 
 If expr1 is null, then NVL returns expr2. If expr1 is not null, then NVL returns expr1.
 
@@ -20,7 +20,7 @@ If expr1 is null, then NVL returns expr2. If expr1 is not null, then NVL returns
 
 Source: http://docs.oracle.com/cd/B28359_01/server.111/b28286/functions110.htm
 
-<b>NVL2:</b></p>
+### NVL2:
 NVL2 lets you determine the value returned by a query based on whether a specified expression is null or not null. 
 If expr1 is not null, then NVL2 returns expr2. If expr1 is null, then NVL2 returns expr3.
 
@@ -37,7 +37,7 @@ If expr1 is not null, then NVL2 returns expr2. If expr1 is null, then NVL2 retur
 Source: http://docs.oracle.com/cd/E11882_01/server.112/e26088/functions120.htm
 
 
-<b>SQOOP_DATE_FORMAT:</b></p>
+### SQOOP_DATE_FORMAT:
 To be able to load Oracle, date format must be "DD-MM-YYYY HH24:MI:SS".
 SQOOP_DATE_FORMAT lets you to convert the format to be able to load to the Oracle.
 
