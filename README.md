@@ -12,6 +12,7 @@ If expr1 is null, then NVL returns expr2. If expr1 is not null, then NVL returns
     -- input:
     -- (1,,2)
     A = LOAD '/data/smp' USING PigStorage(',') as (f1:int, f2:chararray, f3:chararray);
+    -- NVL(exp1, exp2)
     B = FOREACH A GENERATE NVL(f1, '-1') as f1, NVL(f2, '-1') as f2, NVL(f3, '-1') as f3;
     -- output:
     -- (1, -1, 2)
@@ -29,6 +30,7 @@ If expr1 is not null, then NVL2 returns expr2. If expr1 is null, then NVL2 retur
     -- (1,,2)
     -- NVL2(string1, value_if_NOT_null, value_if_null )
     A = LOAD '/data/smp' USING PigStorage(',') as (f1:int, f2:chararray, f3:chararray);
+    -- NVL2(exp1, exp2, exp3);
     B = FOREACH A GENERATE NVL2(f1, f1, '-1');
     -- output:
     -- (1)
