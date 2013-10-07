@@ -6,8 +6,8 @@ import org.apache.pig.backend.executionengine.ExecException;
 import org.apache.pig.data.Tuple;
 
 /**
- * If the value is null, replace it with the null value input, otherwise replace
- * it with the other value input,
+ * NVL2 lets you determine the value returned by a query based on whether a specified expression is null or not null. 
+ * If expr1 is not null, then NVL2 returns expr2. If expr1 is null, then NVL2 returns expr3.
  * <p>
  * Example:
  * 

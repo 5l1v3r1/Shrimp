@@ -7,7 +7,8 @@ import org.apache.pig.data.DataType;
 import org.apache.pig.data.Tuple;
 
 /**
- * If the value is null, replace it with the other input.
+ * NVL lets you replace null (returned as a blank) with a string in the results of a query. 
+ * If expr1 is null, then NVL returns expr2. If expr1 is not null, then NVL returns expr1.
  * <p>
  * Example:
  * 

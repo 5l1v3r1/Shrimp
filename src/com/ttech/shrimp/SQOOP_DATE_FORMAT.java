@@ -9,6 +9,8 @@ import org.apache.pig.data.Tuple;
 
 /**
  * Formating the chararray for Sqoop Loading
+ * To be able to load Oracle, date format must be "DD-MM-YYYY HH24:MI:SS". 
+ * SQOOP_DATE_FORMAT lets you to convert the format to be able to load to the Oracle.
  * <p>
  * Example:
  * 
