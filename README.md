@@ -44,6 +44,7 @@ Source: http://docs.oracle.com/cd/E11882_01/server.112/e26088/functions120.htm
 ### SQOOP_DATE_FORMAT:
 To be able to load Oracle, date format must be "DD-MM-YYYY HH24:MI:SS".
 SQOOP_DATE_FORMAT lets you to convert the format to be able to load to the Oracle.
+Input format must be "YYYYMMDDHH24MISS"
 
     DEFINE SQOOP_DATE_FORMAT com.ttech.shrimp.SQOOP_DATE_FORMAT();
     -- input:
@@ -59,8 +60,7 @@ SQOOP_DATE_FORMAT lets you to convert the format to be able to load to the Oracl
 
 Here are some common tasks when working with the source code.
 
-### Eclipse
+### Build the JAR
 
-To generate eclipse files:
-
-    ant eclipse
+	ant build-jar
+	
