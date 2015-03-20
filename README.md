@@ -62,5 +62,5 @@ Here are some common tasks when working with the source code.
 
 ### Build the JAR
 
-	ant build-jar
+	mvn package
 	
